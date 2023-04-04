@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>AluraGeek | Registrarse</title>
+</head>
+<body>
+    
+    <!-- Menu -->
+    <div class="contenedor_menu">
+        <header>
+            <div class="logo">
+                <a href="./index.html"><img src="./imagenes/Vector.png"></a>
+                <a class="nombre_logo1" href="./index.html">Alura<a class="nombre_logo2" href="./index.html">Geek</a></a>
+                
+            </div>
+            
+            <nav class="headerItems2 input2">
+                <input type="text" placeholder="Buscar..." class="searchInput2">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </nav>
+
+        </header>
+    </div>
+
+    <!-- Registro -->
+    <section class="inicio_sesion">
+        <div class="container_registro">
+            <div class="arreglo_inicioSesion">
+            <h1>Completa tu registro</h1>
+            </div>
+
+            <form class="from1" action="./registro_concluido.html">
+                <legend class="form__label">Información básica</legend>
+            
+            <div class="arreglo_inicioSesion">
+                <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
+            </div>
+            <div class="arreglo_inicioSesion">
+                <input name="email" id="email" class="input input-message-error" type="email" placeholder="Email" required data-tipo="email">
+            </div>
+
+            <div class="arreglo_inicioSesion">
+                <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
+            </div>
+           
+                <legend class="form__label">Información personal</legend>
+            <div class="arreglo_inicioSesion">
+                <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento" required data-tipo="nacimiento">
+            </div>
+
+            <div class="arreglo_inicioSesion">
+                <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlegth="10" maxlength="10" data-tipo="numero">
+            </div>
+            
+                <legend class="form__label">Dirección</legend>
+            <div class="arreglo_inicioSesion">
+               <input name="address" id="address" class="input" type="text" placeholder="Dirección" required pattern="[\s\S]{10,40}" data-tipo="direccion">
+            </div>
+
+             <div class="arreglo_inicioSesion">
+                <input name="state" id="state" class="input" type="text" placeholder="Estado" required pattern="[\s\S]{4,30}" data-tipo="estado">
+             </div>
+
+            <div class="arreglo_inicioSesion">
+                <input name="city" id="city" class="input" type="text" placeholder="Ciudad" required pattern="[\s\S]{4,30}" data-tipo="ciudad">
+
+            </div> 
+                      
+
+               <button type="submit">Registrarse</button>
+            </form>
+            </div>
+            <div id="error"></div>
+        </div>
+    </section>
+
+    <!-- sobre nosotros -->
+    <section class="sobre_nosotros">
+        <div class="logo">
+
+            <img src="./imagenes/Vector.png">
+            <a class="nombre_logo1" href="#">Alura<a class="nombre_logo2" href="#">Geek</a></a>    
+        </div>
+        
+        <nav id="nav" class="nav">
+            <ul>
+                <li><a href="#" onclick="seleccionar()">¿Quienes somos?</a></li>
+                <li><a href="#" onclick="seleccionar()">Politica de privacidad</a></li>
+                <li><a href="#" onclick="seleccionar()">Programa de fidelidad</a></li>
+                <li><a href="#" onclick="seleccionar()">Nuestras tiendas</a></li>
+                <li><a href="#" onclick="seleccionar()">Quiero ser franquiciado</a></li>
+                <li><a href="#" onclick="seleccionar()">Anuncie aqui</a></li>
+            </ul>
+        </nav>
+
+        <div class="contacto">
+            <h2>Hable con nosotros</h2>
+
+            <form id="form">
+            <div class="contenido_seccion">
+            
+            <div class="seccion">
+                <div>
+                <input type="text" id="nombre" placeholder="nombre" required>
+            </div>
+
+            <div>
+                <textarea name="mensaje" id="mensaje" class="mensaje" size='20' maxlenght='20' placeholder="Mensaje" required></textarea>
+               </div>
+           
+               
+               <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    
+    
+     <!-- FOOTER -->
+     <footer>
+        <p> Desarrollado por Jose Gabriel Rivas Gil<br> 
+            2023</p>
+    </footer>
+
+    <script src="./js/validaciones.js" type="module"></script>
+
+</body>
+</html>

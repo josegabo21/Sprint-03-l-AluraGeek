@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>AluraGeek | Agregar producto</title>
+</head>
+<body>
+    
+    <!-- Menu -->
+    <div class="contenedor_menu">
+        <header>
+            <div class="logo">
+                <a href="./index.html"><img src="./imagenes/Vector.png"></a>
+                <a class="nombre_logo1" href="./index.html">Alura<a class="nombre_logo2" href="./index.html">Geek</a></a>
+                
+            </div>
+            
+            <nav class="headerItems">
+                <input type="text" placeholder="Buscar..." class="searchInput">
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </nav>
+           
+          <nav class="headerItems">
+            
+            <a class="boton" href="./productos_completos.html"><button>Menu Administrador</button></a>
+          </nav>
+
+        </header>
+    </div>
+
+    <!-- Agregar producto -->
+    <section class="inicio_sesion">
+        <div class="container_agregar">
+            <div class="arreglo_inicioSesion">
+            <h1>Agregar nuevo producto</h1>
+            </div>
+            <form action="./productos_completos.html">
+            <div class="arreglo_inicioSesion">
+
+                <input type="url" class="searchInput" placeholder="URL de la imagen" required>
+            </div>
+
+            <div class="arreglo_inicioSesion">
+
+                <input type="text" class="searchInput" placeholder="Categoria" required>
+            </div>
+
+            <div class="arreglo_inicioSesion">
+
+                <input type="text" class="searchInput" placeholder="Nombre del producto" required>
+            </div>
+
+            <div class="arreglo_inicioSesion">
+
+                <input type="text" class="searchInput" placeholder="Precio del producto" required>
+            </div>
+
+            <div class="arreglo_inicioSesion">
+
+                <textarea name="mensaje" id="mensaje" class="mensaje" size='20' maxlenght='20' placeholder="Mensaje" class="searchInput" required></textarea required>
+               </div>
+
+               
+                <button>Agregar</button>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- sobre nosotros -->
+    <section class="sobre_nosotros">
+        <div class="logo">
+
+            <img src="./imagenes/Vector.png">
+            <a class="nombre_logo1" href="#">Alura<a class="nombre_logo2" href="#">Geek</a></a>    
+        </div>
+        
+        <nav id="nav" class="nav">
+            <ul>
+                <li><a href="#" onclick="seleccionar()">¿Quienes somos?</a></li>
+                <li><a href="#" onclick="seleccionar()">Politica de privacidad</a></li>
+                <li><a href="#" onclick="seleccionar()">Programa de fidelidad</a></li>
+                <li><a href="#" onclick="seleccionar()">Nuestras tiendas</a></li>
+                <li><a href="#" onclick="seleccionar()">Quiero ser franquiciado</a></li>
+                <li><a href="#" onclick="seleccionar()">Anuncie aqui</a></li>
+            </ul>
+        </nav>
+
+        <div class="contacto">
+            <h2>Hable con nosotros</h2>
+
+            <form id="form">
+            <div class="contenido_seccion">
+            
+            <div class="seccion">
+                <div>
+                <input type="text" id="nombre" placeholder="nombre" required>
+            </div>
+
+            <div>
+                <textarea name="mensaje" id="mensaje" class="mensaje" size='20' maxlenght='20' placeholder="Mensaje" required></textarea>
+               </div>
+           
+               
+               <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+    
+    
+     <!-- FOOTER -->
+     <footer>
+        <p> Desarrollado por Jose Gabriel Rivas Gil<br> 
+            2023</p>
+    </footer>
+
+    <script src="./js/validaciones.js"></script>
+
+</body>
+</html>
