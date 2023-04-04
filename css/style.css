@@ -795,7 +795,11 @@ footer{
         display: none;
         position: absolute;
         left: 150px;
-        
+    
+    }
+
+    .contenedor_menu .menu_adminstrador{
+        display: none;
     }
 
 
